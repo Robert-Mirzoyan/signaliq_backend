@@ -1,11 +1,12 @@
-import re
 import nltk
+import re
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import sent_tokenize
 from app.risk_keywords import RISK_KEYWORDS
 
 nltk.download("vader_lexicon", quiet=True)
-nltk.download("punkt")
+nltk.download("punkt", quiet=True)
+nltk.download("punkt_tab", quiet=True)
 
 sia = SentimentIntensityAnalyzer()
 
